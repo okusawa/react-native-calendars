@@ -76,6 +76,17 @@ class Day extends Component {
       containerStyle.push(this.style.today);
       textStyle.push(this.style.todayText);
     }
+
+     // NOTE: set text color
+    if (!marking.selected && marking.color) {
+      textStyle.push({ color: marking.color });
+    }
+    // NOTE: force bold at today
+    if (this.props.state === 'today') {
+      textStyle.push({ fontWeight: 'bold' });
+    }
+
+
     return (
       <TouchableOpacity
         testID={this.props.testID}
