@@ -74,11 +74,6 @@ class Calendar extends Component {
     onPressArrowLeft: PropTypes.func,
     // Handler which gets executed when press arrow icon left. It receive a callback can go next month
     onPressArrowRight: PropTypes.func,
-
-    onScrollBeginDrag: PropTypes.func,
-    onScrollEndDrag: PropTypes.func,
-    onMomentumScrollBegin: PropTypes.func,
-    onMomentumScrollEnd: PropTypes.func
   };
 
   constructor(props) {
@@ -314,10 +309,6 @@ class Calendar extends Component {
           weekNumbers={this.props.showWeekNumbers}
           onPressArrowLeft={this.props.onPressArrowLeft}
           onPressArrowRight={this.props.onPressArrowRight}
-          onScrollBeginDrag={this.props.onScrollBeginDrag}
-          onScrollEndDrag={this.props.onScrollEndDrag}
-          onMomentumScrollBegin={this.props.onMomentumScrollBegin}
-          onMomentumScrollEnd={this.props.onMomentumScrollEnd}
         />
         <View style={this.style.monthView}>{weeks}</View>
       </View>
