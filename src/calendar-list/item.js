@@ -76,7 +76,7 @@ class CalendarListItem extends Component {
           ]}
         >
           <Text allowFontScaling={false} style={this.style.placeholderText}>
-            {text}
+            {tmp}
           </Text>
         </View>
       );
